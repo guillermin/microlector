@@ -1,0 +1,3782 @@
+[
+  {
+    "file": "HOGAR",
+    "length": 471,
+    "key": ["ANOENC", "NUMERO"],
+    "fields": [
+      {
+        "name": "ANOENC",
+        "description": "Año de la encuesta",
+        "length": 4,
+        "type": "integer"
+      },{
+        "name": "NUMERO",
+        "description": "Número secuencial que indica el orden del hogar en el fichero",
+        "length": 5,
+        "type": "integer",
+        "min": 1,
+        "max": 25000
+      },{
+        "name": "CCAA",
+        "description": "Comunidad autónoma de residencia",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Andalucía",
+          "2": "Aragón",
+          "3": "Asturias, Principado de",
+          "4": "Balears, Illes",
+          "5": "Canarias",
+          "6": "Cantabria",
+          "7": "Castilla y León",
+          "8": "Castilla – La Mancha",
+          "9": "Cataluña",
+          "10": "Comunitat Valenciana",
+          "11": "Extremadura",
+          "12": "Galicia",
+          "13": "Madrid, Comunidad de",
+          "14": "Murcia, Región de",
+          "15": "Navarra, Comunidad Foral de",
+          "16": "País Vasco",
+          "17": "Rioja, La",
+          "18": "Ceuta",
+          "19": "Melilla"
+        }
+      },{
+        "name": "NUTS1",
+        "description": "Región",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Noroeste",
+          "2": "Noreste",
+          "3": "Comunidad de Madrid",
+          "4": "Central",
+          "5": "Este",
+          "6": "Sur",
+          "7": "Canarias"
+        }
+      },{
+        "name": "CAPROV",
+        "description": "Capital de provincia",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "TAMAMU",
+        "description": "Tamaño del municipio",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Municipio de 100.000 habitantes o más",
+          "2": "Municipio con 50.000 o más y menos 100.000 habitantes",
+          "3": "Municipio con 20.000 o más y menos de 50.000 habitantes",
+          "4": "Municipio con 10.000 o más y menos de 20.000 habitantes",
+          "5": "Municipio con menos de 10.000 habitantes"
+        }
+      },{
+        "name": "DENSI",
+        "description": "Densidad de población",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Zona densamente poblada",
+          "2": "Zona intermedia",
+          "3": "Zona diseminada"
+        }
+      },{
+        "name": "CLAVE",
+        "description": "Clave de colaboración efectiva del hogar",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Primera",
+          "2": "Segunda"
+        }
+      },{
+        "name": "CLATEO",
+        "description": "Clave de colaboración teórica del hogar",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Primera",
+          "2": "Segunda"
+        }
+      },{
+        "name": "FACTOR",
+        "description": "Factor poblacional",
+        "length": 11,
+        "type": "double",
+        "decimals": 6
+      },{
+        "name": "NMIEMB",
+        "description": "Número de miembros del hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20
+      },{
+        "name": "TAMANO",
+        "description": "Tamaño del hogar",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Una persona",
+          "2": "Dos personas",
+          "3": "Tres personas",
+          "4": "Cuatro personas",
+          "5": "Cinco personas",
+          "6": "Seis o más personas"
+        }
+      },{
+        "name": "NMIEMSD",
+        "description": "Número de miembros del hogar que pertenecen al servicio doméstico",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19,
+        "null": -9
+      },{
+        "name": "NMIEMHU",
+        "description": "Número de miembros del hogar que son huéspedes",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19,
+        "null": -9
+      },{
+        "name": "NMIEMIN",
+        "description": "Número de miembros del hogar que son invitados",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19,
+        "null": -9
+      },{
+        "name": "NMIEM1",
+        "description": "Número de miembros del hogar de 14 o más años",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20
+      },{
+        "name": "NMIEM2",
+        "description": "Número de miembros del hogar menores de 14 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19
+      },{
+        "name": "NMIEM3",
+        "description": "Número de miembros del hogar menores de 16 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19
+      },{
+        "name": "NMIEM4",
+        "description": "Número de miembros del hogar de 16 o más años",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20
+      },{
+        "name": "NMIEM5",
+        "description": "Número de miembros del hogar menores de 18 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NMIEM6",
+        "description": "Número de miembros del hogar de 18 o más años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NMIEM7",
+        "description": "Número de miembros del hogar de 0 a 4 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19
+      },{
+        "name": "NMIEM8",
+        "description": "Número de miembros del hogar de 5 a 15 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19
+      },{
+        "name": "NMIEM9",
+        "description": "Número de miembros del hogar de 16 a 24 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NMIEM10",
+        "description": "Número de miembros del hogar de 25 a 34 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NMIEM11",
+        "description": "Número de miembros del hogar de 35 a 64 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NMIEM12",
+        "description": "Número de miembros del hogar de 65 a 84 años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NMIEM13",
+        "description": "Número de miembros del hogar de 85 o más años",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NUMACTI",
+        "description": "Número de miembros activos en el hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NUMINACTI",
+        "description": "Número de miembros no activos en el hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NUMOCU",
+        "description": "Número de miembros ocupados en el hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NUMNOCU",
+        "description": "Número de miembros no ocupados en el hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NUMESTU",
+        "description": "Número de estudiantes en el hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NUMNOESTU",
+        "description": "Número de no estudiantes en el hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20
+      },{
+        "name": "NNINOSD",
+        "description": "Número de niños dependientes",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19,
+        "null": -9
+      },{
+        "name": "NHIJOSD",
+        "description": "Número de hijos dependientes",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19,
+        "null": -9
+      },{
+        "name": "UC1",
+        "description": "Tamaño equivalente del hogar. Escala OCDE",
+        "length": 3,
+        "type": "double",
+        "decimals": 1
+      },{
+        "name": "UC2",
+        "description": "Tamaño equivalente del hogar. Escala OCDE modificada",
+        "length": 3,
+        "type": "double",
+        "decimals": 1
+      },{
+        "name": "PF2TEO",
+        "description": "Número de libretas de cuentas individuales teóricas",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19
+      },{
+        "name": "PF2RECO",
+        "description": "Número de libretas de cuentas individuales recogidas",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 19
+      },{
+        "name": "TIPHOGAR1",
+        "description": "Tipo de hogar (primera clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Una persona de 65 o más años",
+          "2": "Una persona de 30 a 64 años",
+          "3": "Una persona de menos de 30 años",
+          "4": "Un adulto con niños menores de 16 años",
+          "5": "Pareja sin hijos teniendo al menos uno de los miembros 65 años o más",
+          "6": "Pareja sin hijos teniendo los dos miembros menos de 65 años",
+          "7": "Pareja con un hijo menor de 16 años",
+          "8": "Pareja con dos hijos menores de 16 años",
+          "9": "Pareja con tres o más hijos menores de 16 años",
+          "10": "Padre o madre solo, con al menos un hijo de 16 o más años",
+          "11": "Pareja con al menos un hijo de 16 o más años",
+          "12": "Otros hogares"
+        }
+      },{
+        "name": "TIPHOGAR2",
+        "description": "Tipo de hogar (segunda clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Una persona de 65 o más años",
+          "2": "Una persona de 30 a 64 años",
+          "3": "Una persona de menos de 30 años",
+          "4": "Un adulto con niños menores de 18 años",
+          "5": "Pareja sin hijos teniendo al menos uno de los miembros 65 años o más",
+          "6": "Pareja sin hijos teniendo los dos miembros menos de 65 años",
+          "7": "Pareja con un hijo menor de 18 años",
+          "8": "Pareja con dos hijos menores de 18 años",
+          "9": "Pareja con tres o más hijos menores de 18 años",
+          "10": "Padre o madre solo, con al menos un hijo de 18 o más años",
+          "11": "Pareja con al menos un hijo de 18 o más años",
+          "12": "Otros hogares"
+        }
+      },{
+        "name": "TIPHOGAR3",
+        "description": "Tipo de hogar (tercera clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Una persona de 65 o más años",
+          "2": "Una persona de 30 a 64 años",
+          "3": "Una persona de menos de 30 años",
+          "4": "Pareja sin niños dependientes teniendo al menos uno de los miembros 65 años o más",
+          "5": "Pareja sin niños dependientes teniendo los dos miembros menos de 65 años",
+          "6": "Pareja con un niño dependiente",
+          "7": "Pareja con dos niños dependientes",
+          "8": "Pareja con tres o más niños dependientes",
+          "9": "Padre o madre solo, con al menos un niño dependiente",
+          "10": "Otros hogares"
+        },
+        "null": -9
+      },{
+        "name": "TIPHOGAR4",
+        "description": "Tipo de hogar (cuarta clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Una persona: hombre de menos de 65 años",
+          "2": "Una persona: hombre de 65 o más años",
+          "3": "Una persona: mujer de menos de 65 años",
+          "4": "Una persona: mujer de 65 o más años",
+          "5": "Dos adultos sin hijos dependientes económicamente, al menos una persona de 65 o más años",
+          "6": "Dos adultos sin hijos dependientes económicamente, teniendo ambos menos de 65 años",
+          "7": "Otros hogares sin hijos dependientes económicamente",
+          "8": "Un adulto con al menos un hijo dependiente",
+          "9": "Dos adultos con un hijo dependiente",
+          "10": "Dos adultos con dos hijos dependientes",
+          "11": "Dos adultos con tres o más hijos dependientes",
+          "12": "Otros hogares con hijos dependientes"
+        },
+        "null": -9
+      },{
+        "name": "TIPHOGAR5",
+        "description": "Tipo de hogar (quinta clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Una persona: hombre de menos de 65 años",
+          "2": "Una persona: hombre de 65 o más años",
+          "3": "Una persona: mujer de menos de 65 años",
+          "4": "Una persona: mujer de 65 o más años",
+          "5": "Dos adultos sin niños dependientes económicamente, al menos una persona de 65 o más años",
+          "6": "Dos adultos sin niños dependientes económicamente, teniendo ambos menos de 65 años",
+          "7": "Otros hogares sin niños dependientes económicamente",
+          "8": "Un adulto con al menos un niño dependiente",
+          "9": "Dos adultos con un niño dependiente",
+          "10": "Dos adultos con dos niños dependientes",
+          "11": "Dos adultos con tres o más niños dependientes",
+          "12": "Otros hogares con niños dependientes"
+        },
+        "null": -9
+      },{
+        "name": "TIPHOGAR6",
+        "description": "Tipo de hogar (sexta clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Vive solo",
+          "2": "Edad del hijo menor: menos de 23 años",
+          "3": "Edad del hijo menor: 23 años o más",
+          "4": "Vive con otros pero sin hijos",
+          "5": "Sólo la pareja",
+          "6": "Edad del hijo menor: hasta 2 años",
+          "7": "Edad del hijo menor: de 3 a 15 años",
+          "8": "Edad del hijo menor: de 16 a 22 años",
+          "9": "Edad del hijo menor: 23 años o más",
+          "10": "Pareja con otros, sin hijos"
+        }
+      },{
+        "name": "TIPHOGAR7",
+        "description": "Tipo de hogar (séptima clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Persona sola de 65 o más años",
+          "2": "Persona sola de menos de 65 años",
+          "3": "Pareja sin hijos",
+          "4": "Pareja con un hijo",
+          "5": "Pareja con dos hijos",
+          "6": "Pareja con tres o mas hijos",
+          "7": "Un adulto con hijos",
+          "8": "Otro tipo de hogares"
+        }
+      },{
+        "name": "TIPHOGAR8",
+        "description": "Tipo de hogar (octava clasificación) derivada de TIPHOGAR1",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Persona o pareja (al menos uno de los miembros) de 65 o más años",
+          "2": "Otros hogares con una persona o pareja sin hijos",
+          "3": "Pareja con hijos menores de 16 años o adulto con niños menores de 16 años",
+          "4": "Otros hogares"
+        }
+      },{
+        "name": "TIPHOGAR9",
+        "description": "Tipo de hogar (novena clasificación) derivada de TIPHOGAR4",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Un adulto",
+          "2": "Dos adultos",
+          "3": "Otros hogares sin hijos dependientes",
+          "4": "Un adulto con al menos un hijo dependiente",
+          "5": "Dos adultos con al menos un hijo dependiente",
+          "6": "Otros hogares con hijos dependientes"
+        },
+        "null": -9
+      },{
+        "name": "TIPHOGAR10",
+        "description": "Tipo de hogar (décima clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Hogares unipersonales",
+          "2": "Monoparentales con niños dependientes",
+          "3": "Pareja sin niños dependientes",
+          "4": "Pareja con niños dependientes",
+          "5": "Otros hogares con niños dependientes",
+          "6": "Otros hogares sin niños dependientes"
+        },
+        "null": -9
+      },{
+        "name": "TIPHOGAR11",
+        "description": "Tipo de hogar (undécima clasificación)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Hogares unipersonales",
+          "2": "Monoparentales con hijos dependientes",
+          "3": "Pareja sin hijos dependientes",
+          "4": "Pareja con hijos dependientes",
+          "5": "Otros hogares con hijos dependientes",
+          "6": "Otros hogares sin hijos dependientes"
+        },
+        "null": -9
+      },{
+        "name": "SITUOCUHOG",
+        "description": "Situación del hogar respecto a la ocupación",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "El sustentador principal y el cónyuge ocupados, al menos otro de los miembros también ocupado",
+          "2": "El sustentador principal y el cónyuge ocupados, ninguno de los otros miembros ocupados (si es que los hay)",
+          "3": "El sustentador principal o el cónyuge ocupado, otro de los miembros ocupado",
+          "4": "El sustentador principal o el cónyuge ocupado, al menos otros dos miembros ocupados",
+          "5": "El sustentador principal o el cónyuge ocupado, ninguno de los otros miembros ocupado (si es que los hay)",
+          "6": "Ni el sustentador principal ni su cónyuge ocupado, otro miembro ocupado",
+          "7": "Ni el sustentador principal ni su cónyuge ocupados, al menos otros dos miembros ocupados",
+          "8": "Ningún ocupado en el hogar"
+        },
+        "null": -9
+      },{
+        "name": "SITUACTHOG",
+        "description": "Situación del hogar respecto a la actividad",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "El sustentador principal y el cónyuge activos, al menos otro de los miembros también activo",
+          "2": "El sustentador principal y el cónyuge activos, ninguno de los otros miembros activos (si es que los hay)",
+          "3": "El sustentador principal o el cónyuge activo, otro de los miembros también activo",
+          "4": "El sustentador principal o el cónyuge activo, al menos otros dos miembros activos",
+          "5": "El sustentador principal o el cónyuge activo, ninguno de los otros miembros activos (si es que los hay)",
+          "6": "Ni el sustentador principal ni su cónyuge activos, otro miembro activo",
+          "7": "Ni el sustentador principal ni su cónyuge activos, al menos otros dos miembros activos",
+          "8": "Ningún activo en el hogar"
+        },
+        "null": -9
+      },{
+        "name": "NORDENSP",
+        "description": "Número de orden del sustentador principal",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20
+      },{
+        "name": "EDADSP",
+        "description": "Edad (calculada a fecha de cumplimentación de la ficha de hogar) del sustentador principal",
+        "length": 2,
+        "type": "integer"
+      },{
+        "name": "SEXOSP",
+        "description": "Sexo del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Hombre",
+          "6": "Mujer"
+        },
+        "null": -9
+      },{
+        "name": "PAISNACODSP",
+        "description": "País de nacimiento del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "España",
+          "2": "Resto de la Unión Europea (26 países)",
+          "3": "Resto de Europa",
+          "4": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "NACIONASP",
+        "description": "Nacionalidad del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sólo española",
+          "2": "Sólo extranjera",
+          "3": "Española y extranjera"
+        },
+        "null": -9
+      },{
+        "name": "PAISCODSP",
+        "description": "País del que tiene nacionalidad extranjera el sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Resto de la Unión Europea (26 países)",
+          "2": "Resto de Europa",
+          "3": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "SITURESSP",
+        "description": "Situación de residencia del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Presente",
+          "6": "Ausente"
+        }
+      },{
+        "name": "ECIVILLEGALSP",
+        "description": "Estado civil legal del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Soltero",
+          "2": "Casado",
+          "3": "Viudo",
+          "4": "Separado",
+          "5": "Divorciado"
+        },
+        "null": -9
+      },{
+        "name": "NORDENCOSP",
+        "description": "Número de orden del cónyuge o pareja del sustentador principal",
+        "length": 2,
+        "type": "integer",
+        "null": 99
+      },{
+        "name": "UNIONSP",
+        "description": "Tipo de unión con el cónyuge o pareja del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Matrimonio",
+          "2": "Pareja de hecho registrada",
+          "3": "Pareja de hecho sin registrar"
+        },
+        "null": -9
+      },{
+        "name": "CONVIVENCIASP",
+        "description": "Convivencia en pareja del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Conviviendo con su cónyuge",
+          "2": "Conviviendo con una pareja de hecho",
+          "3": "No conviviendo en pareja"
+        },
+        "null": -9
+      },{
+        "name": "NORDENPASP",
+        "description": "Número de orden del padre del sustentador principal",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20,
+        "null": 99
+      },{
+        "name": "PAISPADRESP",
+        "description": "País de nacimiento del padre del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "España",
+          "2": "Resto de la Unión Europea (26 países)",
+          "3": "Resto de Europa",
+          "4": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "NORDENMASP",
+        "description": "Número de orden de la madre del sustentador principal",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20,
+        "null": 99
+      },{
+        "name": "PAISMADRESP",
+        "description": "País de nacimiento de la madre del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "España",
+          "2": "Resto de la Unión Europea (26 países)",
+          "3": "Resto de Europa",
+          "4": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "ESTUDIOSSP",
+        "description": "Estudios completados del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "No sabe leer o escribir",
+          "2": "Sabe leer y escribir pero no estuvo escolarizado el periodo completo de educación obligatoria",
+          "3": "Estudios secundarios de primera etapa con o sin título (graduado en ESO, graduado escolar o equivalente, bachiller elemental, certificado de escolaridad)",
+          "4": "Bachiller, BUP, bachiller superior, COU, PREU",
+          "5": "FP de grado medio, FPI, oficialía industrial o equivalente, otros estudios de grado medio",
+          "6": "FP de grado superior, FPII, maestría industrial o equivalente",
+          "7": "Diplomatura, ingeniería técnica o equivalente",
+          "8": "Grado universitario",
+          "9": "Licenciatura, ingeniería o equivalente",
+          "10": "Máster oficial universitario, especialidades profesionales asimilables (MIR, FIR, etc.)",
+          "11": "Doctorado"
+        }
+      },{
+        "name": "ESTUDREDSP",
+        "description": "Estudios completados reducida del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sin estudios o con estudios de 1er grado",
+          "2": "Educación secundaria, primer ciclo",
+          "3": "Educación secundaria, segundo ciclo",
+          "4": "Educación superior"
+        }
+      },{
+        "name": "SITUACTSP",
+        "description": "Situación en la actividad la semana anterior a la entrevista del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Trabajando al menos una hora",
+          "2": "Con trabajo del que está ausente (por enfermedad, vacaciones, maternidad,...) y al que espera volver a incorporarse",
+          "3": "Parado/a",
+          "4": "Jubilado/a, retirado/a anticipadamente",
+          "5": "Estudiante",
+          "6": "Dedicado/a a las labores del hogar",
+          "7": "Con incapacidad laboral permanente",
+          "8": "Otra situación de inactividad económica"
+        }
+      },{
+        "name": "SITUREDSP",
+        "description": "Situación en la actividad reducida del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Activo",
+          "2": "Inactivo"
+        }
+      },{
+        "name": "OCUSP",
+        "description": "¿Estaba el sustentador principal ocupado en la semana anterior a la entrevista?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Ocupado",
+          "2": "No ocupado"
+        }
+      },{
+        "name": "JORNADASP",
+        "description": "Tipo de jornada en el trabajo del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Completa",
+          "2": "Parcial"
+        },
+        "null": -9
+      },{
+        "name": "PERCEPSP",
+        "description": "¿Es el sustentador principal perceptor de ingresos monetarios regulares durante el mes anterior al de entrevista?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "IMPEXACPSP",
+        "description": "Importe exacto de los ingresos mensuales netos del sustentador principal",
+        "length": 5,
+        "type": "integer",
+        "min": 0,
+        "max": 99999,
+        "null": -9
+      },{
+        "name": "IMPUEXACPSP",
+        "description": "¿El importe exacto de los ingresos mensuales netos del sustentador principal procede de una imputación?",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "INTERINPSP",
+        "description": "Intervalo de ingresos mensuales netos totales del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Menos de 500 €",
+          "2": "De 500 a menos de 1000 €",
+          "3": "De 1000 a menos de 1500 €",
+          "4": "De 1500 a menos de 2000 €",
+          "5": "De 2000 a menos de 2500 €",
+          "6": "De 2500 a menos de 3000 €",
+          "7": "3000 o más €"
+        },
+        "null": -9
+      },{
+        "name": "IMPUINTERPSP",
+        "description": "¿El intervalo de ingresos mensuales netos totales del sustentador principal procede de una imputación?",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "TRABAJO",
+        "description": "¿Ha trabajado alguna vez en su vida el sustentador principal?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "OCUPA",
+        "description": "Ocupación que desempeña o desempeñó el sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Directores y gerentes",
+          "2": "Técnicos y profesionales científicos e intelectuales",
+          "3": "Técnicos y profesionales de apoyo",
+          "4": "Empleados contables, administrativos y otros empleados de oficina",
+          "5": "Trabajadores de los servicios de restauración, personales, protección y vendedores",
+          "6": "Trabajadores cualificados en el sector agrícola, ganadero, forestal y pesquero",
+          "7": "Artesanos y trabajadores cualificados de las industrias manufactureras y la construcción (excepto operadores de instalaciones y maquinaria)",
+          "8": "Operadores de instalaciones y maquinaria, y montadores",
+          "9": "Ocupaciones elementales",
+          "0": "Ocupaciones militares"
+        },
+        "null": -9
+      },{
+        "name": "OCUPARED",
+        "description": "Ocupación que desempeña o desempeñó reducida el sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Directores y gerentes",
+          "2": "Técnicos y profesionales",
+          "3": "Empleados de tipo administrativo y trabajadores de servicios y de comercio",
+          "4": "Artesanos y trabajadores cualificados de otros sectores, operadores y montadores",
+          "5": "Trabajadores en ocupaciones elementales"
+        },
+        "null": -9
+      },{
+        "name": "ACTESTB",
+        "description": "Actividad del establecimiento en el que trabaja o trabajó el sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "string",
+        "values": {
+          "A": "Agricultura, ganadería, silvicultura y pesca",
+          "B": "Industrias extractivas",
+          "C": "Industria manufacturera",
+          "D": "Suministro de energía eléctrica, gas, vapor y aire acondicionado",
+          "E": "Suministro de agua, actividades de saneamiento, gestión de residuos y descontaminación",
+          "F": "Construcción",
+          "G": "Comercio al por mayor y al por menor; reparación de vehículos de motor y motocicletas",
+          "H": "Transporte y almacenamiento",
+          "I": "Hostelería",
+          "J": "Información y comunicaciones",
+          "K": "Actividades financieras y de seguros",
+          "L": "Actividades inmobiliarias",
+          "M": "Actividades profesionales, científicas y técnicas",
+          "N": "Actividades administrativas y servicios auxiliares",
+          "O": "Administración pública y defensa; seguridad social obligatoria",
+          "P": "Educación",
+          "Q": "Actividades sanitarias y de servicios sociales",
+          "R": "Actividades artísticas, recreativas y de entretenimiento",
+          "S": "Otros servicios",
+          "T": "Actividades de los hogares como empleadores de personal doméstico"
+        },
+        "null": "-9"
+      },{
+        "name": "ACTESTBRED",
+        "description": "Actividad del establecimiento en el que trabaja o trabajó reducida el sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Agricultura, ganadería, silvicultura y pesca",
+          "2": "Industrias extractiva, manufacturera, eléctrica, gas, vapor y aire acondicionado, agua, saneamiento, gestión de residuos y descontaminación, construcción",
+          "3": "Servicios"
+        },
+        "null": -9
+      },{
+        "name": "SITPROF",
+        "description": "Situación profesional del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Asalariado",
+          "2": "Empresario sin asalariados o trabajador independiente",
+          "3": "Empleador",
+          "4": "Otra situación (ayuda familiar, etc.)"
+        },
+        "null": -9
+      },{
+        "name": "SECTOR",
+        "description": "Sector de actividad del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Público",
+          "2": "Privado"
+        },
+        "null": -9
+      },{
+        "name": "TIPOCONT",
+        "description": "Tipo de contrato del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Indefinido",
+          "2": "Eventual/temporal",
+          "3": "Sin contrato"
+        },
+        "null": -9
+      },{
+        "name": "SITSOCI",
+        "description": "Situación socioeconómica del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Trabajador manual, excepto agricultura",
+          "2": "Trabajador no manual, excepto agricultura",
+          "3": "Trabajador manual, excepto agricultura",
+          "4": "Trabajador no manual, excepto agricultura",
+          "5": "Independiente, excepto agricultura",
+          "6": "Agricultor independiente o trabajador de la agricultura",
+          "7": "Parado/a",
+          "8": "Jubilado/a, retirado/a anticipadamente",
+          "9": "Estudiante",
+          "10": "Labores del hogar o actividad no económica",
+          "11": "Incapacitados para trabajar"
+        },
+        "null": -9
+      },{
+        "name": "SITSOCIRE",
+        "description": "Situación socioeconómica del sustentador principal (Clasificación reducida)",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Trabajador manual, excepto agricultura",
+          "2": "Trabajador no manual, excepto agricultura",
+          "3": "Trabajador independiente y agricultor o trabajador en la agricultura",
+          "4": "Parado",
+          "5": "Retirados o jubilados",
+          "6": "Otros inactivos"
+        },
+        "null": -9
+      },{
+        "name": "REGTEN",
+        "description": "Régimen de tenencia de la vivienda principal",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        }
+      },{
+        "name": "TIPOEDIF",
+        "description": "Tipo de edificio en el que está ubicada la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Vivienda unifamiliar independiente",
+          "2": "Vivienda unifamiliar adosada o pareada",
+          "3": "Con menos de 10 viviendas",
+          "4": "Con 10 ó más viviendas",
+          "5": "Otros (destinado a otros fines o alojamiento fijo)"
+        },
+        "null": -9
+      },{
+        "name": "ZONARES",
+        "description": "Tipo de zona de residencia de la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Urbana de lujo",
+          "2": "Urbana alta",
+          "3": "Urbana media",
+          "4": "Urbana inferior",
+          "5": "Rural industrial",
+          "6": "Rural pesquera",
+          "7": "Rural agraria"
+        },
+        "null": -9
+      },{
+        "name": "TIPOCASA",
+        "description": "Tipo de casa de la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Chalé o casa grande",
+          "2": "Casa media",
+          "3": "Casa económica o alojamiento"
+        },
+        "null": -9
+      },{
+        "name": "NHABIT",
+        "description": "Número de habitaciones de la vivienda principal",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 8,
+        "null": -9
+      },{
+        "name": "ANNOCON",
+        "description": "Fecha construcción edificio de la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Hace menos de 25 años",
+          "6": "Hace 25 ó más años"
+        },
+        "null": -9
+      },{
+        "name": "SUPERF",
+        "description": "Superficie útil de la vivienda principal",
+        "length": 3,
+        "type": "integer",
+        "min": 35,
+        "max": 300,
+        "null": -9
+      },{
+        "name": "AGUACALI",
+        "description": "Disposición de agua caliente de la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENAGUA",
+        "description": "Fuente de energía para agua caliente de la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEF",
+        "description": "Disposición de calefacción de la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCALE",
+        "description": "Fuente de energía para calefacción de la vivienda principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "DISPOSIOV",
+        "description": "Disposición de otras viviendas en los últimos 12 meses",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "NUMOVD",
+        "description": "Número de otras viviendas a disposición del hogar",
+        "length": 1,
+        "type": "integer",
+        "min": 1,
+        "max": 9
+      },{
+        "name": "REGTENV1",
+        "description": "Régimen de tenencia de la vivienda 1",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV1",
+        "description": "Número de meses a disposición del hogar de la vivienda 1",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV1",
+        "description": "Número de días a disposición del hogar de la vivienda 1",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV1",
+        "description": "Disposición de agua caliente en la vivienda 1",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV1",
+        "description": "Fuente de energía para agua caliente de la vivienda 1",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV1",
+        "description": "Disposición de calefacción de la vivienda 1",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV1",
+        "description": "Fuente de energía para calefacción de la vivienda 1",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV2",
+        "description": "Régimen de tenencia de la vivienda 2",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV2",
+        "description": "Número de meses a disposición del hogar de la vivienda 2",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV2",
+        "description": "Número de días a disposición del hogar de la vivienda 2",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV2",
+        "description": "Disposición de agua caliente en la vivienda 2",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV2",
+        "description": "Fuente de energía para agua caliente de la vivienda 2",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV2",
+        "description": "Disposición de calefacción de la vivienda 2",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV2",
+        "description": "Fuente de energía para calefacción de la vivienda 2",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV3",
+        "description": "Régimen de tenencia de la vivienda 3",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV3",
+        "description": "Número de meses a disposición del hogar de la vivienda 3",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV3",
+        "description": "Número de días a disposición del hogar de la vivienda 3",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV3",
+        "description": "Disposición de agua caliente en la vivienda 3",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV3",
+        "description": "Fuente de energía para agua caliente de la vivienda 3",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV3",
+        "description": "Disposición de calefacción de la vivienda 3",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV3",
+        "description": "Fuente de energía para calefacción de la vivienda 3",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV4",
+        "description": "Régimen de tenencia de la vivienda 4",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV4",
+        "description": "Número de meses a disposición del hogar de la vivienda 4",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV4",
+        "description": "Número de días a disposición del hogar de la vivienda 4",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV4",
+        "description": "Disposición de agua caliente en la vivienda 4",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV4",
+        "description": "Fuente de energía para agua caliente de la vivienda 4",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV4",
+        "description": "Disposición de calefacción de la vivienda 4",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV4",
+        "description": "Fuente de energía para calefacción de la vivienda 4",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV5",
+        "description": "Régimen de tenencia de la vivienda 5",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV5",
+        "description": "Número de meses a disposición del hogar de la vivienda 5",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV5",
+        "description": "Número de días a disposición del hogar de la vivienda 5",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV5",
+        "description": "Disposición de agua caliente en la vivienda 5",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV5",
+        "description": "Fuente de energía para agua caliente de la vivienda 5",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV5",
+        "description": "Disposición de calefacción de la vivienda 5",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV5",
+        "description": "Fuente de energía para calefacción de la vivienda 5",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV6",
+        "description": "Régimen de tenencia de la vivienda 6",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV6",
+        "description": "Número de meses a disposición del hogar de la vivienda 6",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV6",
+        "description": "Número de días a disposición del hogar de la vivienda 6",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV6",
+        "description": "Disposición de agua caliente en la vivienda 6",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV6",
+        "description": "Fuente de energía para agua caliente de la vivienda 6",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV6",
+        "description": "Disposición de calefacción de la vivienda 6",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV6",
+        "description": "Fuente de energía para calefacción de la vivienda 6",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV7",
+        "description": "Régimen de tenencia de la vivienda 7",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV7",
+        "description": "Número de meses a disposición del hogar de la vivienda 7",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV7",
+        "description": "Número de días a disposición del hogar de la vivienda 7",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV7",
+        "description": "Disposición de agua caliente en la vivienda 7",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV7",
+        "description": "Fuente de energía para agua caliente de la vivienda 7",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV7",
+        "description": "Disposición de calefacción de la vivienda 7",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV7",
+        "description": "Fuente de energía para calefacción de la vivienda 7",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV8",
+        "description": "Régimen de tenencia de la vivienda 8",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV8",
+        "description": "Número de meses a disposición del hogar de la vivienda 8",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV8",
+        "description": "Número de días a disposición del hogar de la vivienda 8",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV8",
+        "description": "Disposición de agua caliente en la vivienda 8",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV8",
+        "description": "Fuente de energía para agua caliente de la vivienda 8",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV8",
+        "description": "Disposición de calefacción de la vivienda 8",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV8",
+        "description": "Fuente de energía para calefacción de la vivienda 8",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "REGTENV9",
+        "description": "Régimen de tenencia de la vivienda 9",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Propiedad sin préstamo o hipoteca en curso",
+          "2": "Propiedad con préstamo o hipoteca en curso",
+          "3": "Alquiler",
+          "4": "Alquiler reducido (renta antigua)",
+          "5": "Cesión semigratuita",
+          "6": "Cesión gratuita"
+        },
+        "null": -9
+      },{
+        "name": "MESESV9",
+        "description": "Número de meses a disposición del hogar de la vivienda 9",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 12,
+        "null": -9
+      },{
+        "name": "DIASV9",
+        "description": "Número de días a disposición del hogar de la vivienda 9",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 31,
+        "null": -9
+      },{
+        "name": "AGUACV9",
+        "description": "Disposición de agua caliente en la vivienda 9",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENACV9",
+        "description": "Fuente de energía para agua caliente de la vivienda 9",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "CALEFV9",
+        "description": "Disposición de calefacción de la vivienda 9",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENCAV9",
+        "description": "Fuente de energía para calefacción de la vivienda 9",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Electricidad",
+          "2": "Gas natural",
+          "3": "Gas licuado",
+          "4": "Otros combustibles líquidos",
+          "5": "Combustibles sólidos",
+          "6": "Energía solar"
+        },
+        "null": -9
+      },{
+        "name": "GASTOT",
+        "description": "Importe total del gasto anual del hogar monetario y no monetario, elevado temporal y poblacionalmente",
+        "length": 16,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "IMPUTGAS",
+        "description": "Porcentaje de imputación del gasto total",
+        "length": 5,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTMON",
+        "description": "Importe total del gasto monetario anual del hogar, elevado temporal y poblacionalmente",
+        "length": 16,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM1",
+        "description": "Importe total del gasto anual del hogar no monetario procedente del autoconsumo, elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM2",
+        "description": "Importe total del gasto anual del hogar no monetario procedente del autosuministro, elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM3",
+        "description": "Importe total del gasto anual no monetario del hogar procedente del salario en especie, elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM4",
+        "description": "Importe total del gasto anual no monetario del hogar procedente del alquiler imputado a la vivienda, principal y a otras viviendas a disposición del hogar , en propiedad o cedidas gratuita o semigratuitamente por razón distinta a trabajo, elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "CAPROP",
+        "description": "Ingresos de trabajo por cuenta propia",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "CAJENA",
+        "description": "Ingresos de trabajo por cuenta ajena",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "PENSIO",
+        "description": "Ingresos por pensiones contributivas y no contributivas",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "DESEM",
+        "description": "Subsidios y prestaciones de desempleo",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "OTRSUB",
+        "description": "Otros subsidios y prestaciones sociales",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "RENTAS",
+        "description": "Rentas de la propiedad y del capital",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "OTROIN",
+        "description": "Otros ingresos regulares",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FUENPRIN",
+        "description": "Principal fuente de ingresos",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Cuenta propia",
+          "2": "Cuenta ajena",
+          "3": "Pensiones contributivas",
+          "4": "Desempleo",
+          "5": "Otras prestaciones",
+          "6": "Rentas del capital y la propiedad",
+          "7": "Otros ingresos regulares"
+        },
+        "null": -9
+      },{
+        "name": "FUENPRINRED",
+        "description": "Principal fuente de ingresos reducida",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Trabajo por cuenta propia y rentas de la propiedad y del capital",
+          "2": "Trabajo por cuenta ajena",
+          "3": "Pensiones, subsidios y otras prestaciones e ingresos regulares"
+        },
+        "null": -9
+      },{
+        "name": "IMPEXAC",
+        "description": "Importe exacto de los ingresos mensuales netos totales del hogar",
+        "length": 5,
+        "type": "integer",
+        "min": 0,
+        "max": 99999
+      },{
+        "name": "IMPUEXAC",
+        "description": "¿El importe exacto  que se proporciona en el fichero procede de una imputación?",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "INTERIN",
+        "description": "Intervalo de ingresos mensuales netos totales del hogar",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Menos de 500 €",
+          "2": "De 500 a menos de 1000 €",
+          "3": "De 1000 a menos de 1500 €",
+          "4": "De 1500 a menos de 2000 €",
+          "5": "De 2000 a menos de 2500 €",
+          "6": "De 2500 a menos de 3000 €",
+          "7": "De 3000 a menos de 5000 €",
+          "8": "De 5000 a menos de 7000 €",
+          "9": "De 7000 a menos de 9000 €",
+          "10": "9000 o más €"
+        }
+      },{
+        "name": "IMPUINTER",
+        "description": "¿El intervalo de ingresos que se proporciona en el fichero procede de una imputación?",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "NUMPERI",
+        "description": "Número de miembros del hogar perceptores de ingresos",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 20,
+        "null": -9
+      },{
+        "name": "COMIMH",
+        "description": "Número de comidas y cenas efectuadas por los miembros del hogar",
+        "length": 3,
+        "type": "integer",
+        "min": 0,
+        "max": 999,
+        "null": -9
+      },{
+        "name": "COMISD",
+        "description": "Número de comidas y cenas efectuadas por el servicio doméstico",
+        "length": 3,
+        "type": "integer",
+        "min": 0,
+        "max": 999,
+        "null": -9
+      },{
+        "name": "COMIHU",
+        "description": "Número de comidas y cenas efectuadas por los huéspedes",
+        "length": 3,
+        "type": "integer",
+        "min": 0,
+        "max": 999,
+        "null": -9
+      },{
+        "name": "COMIINV",
+        "description": "Número de comidas y cenas efectuadas por los invitados",
+        "length": 3,
+        "type": "integer",
+        "min": 0,
+        "max": 999,
+        "null": -9
+      },{
+        "name": "COMITOT",
+        "description": "Número total de comidas y cenas",
+        "length": 3,
+        "type": "integer",
+        "min": 0,
+        "max": 999,
+        "null": -9
+      }
+    ]
+  },{
+    "file": "MIEMBROS",
+    "length": 84,
+    "key": ["ANOENC", "NUMERO", "NORDEN"],
+    "parent": {
+      "file": "HOGAR",
+      "key": ["ANOENC", "NUMERO"]
+    },
+    "fields": [
+      {
+        "name": "ANOENC",
+        "description": "Año de la encuesta",
+        "length": 4,
+        "type": "integer"
+      },{
+        "name": "NUMERO",
+        "description": "Número secuencial que indica el orden del hogar en el fichero",
+        "length": 5,
+        "type": "integer",
+        "min": 1,
+        "max": 25000
+      },{
+        "name": "NORDEN",
+        "description": "Número de orden del miembro del hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20
+      },{
+        "name": "CATEGMH",
+        "description": "Categoría del miembro del hogar",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Miembro del hogar (no servicio doméstico, huésped ni invitado)",
+          "2": "Servicio doméstico",
+          "3": "Huésped",
+          "4": "Invitado"
+        },
+        "null": -9
+      },{
+        "name": "SUSPRIN",
+        "description": "¿Es el sustentador principal?",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "RELASP",
+        "description": "Relación de parentesco con el sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sustentador principal",
+          "2": "Cónyuge o pareja",
+          "3": "Hijo del sustentador principal y/o pareja",
+          "4": "Padre o madre del sustentador principal",
+          "5": "Padre o madre del cónyuge o pareja",
+          "6": "Otra situación (con parentesco distinto de los anteriores y sin ningún parentesco)"
+        }
+      },{
+        "name": "EDAD",
+        "description": "Edad calculada con referencia a la fecha de la entrevista de la ficha de hogar",
+        "length": 2,
+        "type": "integer",
+        "min": 0,
+        "max": 85
+      },{
+        "name": "SEXO",
+        "description": "Sexo",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Hombre",
+          "6": "Mujer"
+        },
+        "null": -9
+      },{
+        "name": "PAISNACIM",
+        "description": "País de nacimiento",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "España",
+          "2": "Resto de la Unión Europea (26 países)",
+          "3": "Resto de Europa",
+          "4": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "NACIONA",
+        "description": "Nacionalidad",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sólo española",
+          "2": "Sólo extranjera",
+          "3": "Española y extranjera"
+        },
+        "null": -9
+      },{
+        "name": "PAISNACION",
+        "description": "País del que tiene nacionalidad extranjera",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Resto de la Unión Europea (26 países)",
+          "2": "Resto de Europa",
+          "3": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "SITURES",
+        "description": "Situación de residencia",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Presente",
+          "6": "Ausente"
+        }
+      },{
+        "name": "ECIVILLEGAL",
+        "description": "Estado civil legal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Soltero",
+          "2": "Casado",
+          "3": "Viudo",
+          "4": "Separado",
+          "5": "Divorciado"
+        },
+        "null": -9
+      },{
+        "name": "NORDENCO",
+        "description": "Número de orden del cónyuge o pareja",
+        "length": 2,
+        "type": "integer",
+        "null": 99
+      },{
+        "name": "UNION",
+        "description": "Tipo de unión con el cónyuge o pareja",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Matrimonio",
+          "2": "Pareja de hecho registrada",
+          "3": "Pareja de hecho sin registrar"
+        },
+        "null": -9
+      },{
+        "name": "CONVIVENCIA",
+        "description": "Convivencia en pareja",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Conviviendo con su cónyuge",
+          "2": "Conviviendo con una pareja de hecho",
+          "3": "No conviviendo en pareja"
+        },
+        "null": -9
+      },{
+        "name": "NORDENPA",
+        "description": "Número de orden del padre",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20,
+        "null": 99
+      },{
+        "name": "PAISPADRE",
+        "description": "País de nacimiento del padre",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "España",
+          "2": "Resto de la Unión Europea (26 países)",
+          "3": "Resto de Europa",
+          "4": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "NORDENMA",
+        "description": "Número de orden de la madre",
+        "length": 2,
+        "type": "integer",
+        "min": 1,
+        "max": 20,
+        "null": 99
+      },{
+        "name": "PAISMADRE",
+        "description": "País de nacimiento de la madre",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "España",
+          "2": "Resto de la Unión Europea (26 países)",
+          "3": "Resto de Europa",
+          "4": "Resto del mundo"
+        },
+        "null": -9
+      },{
+        "name": "ESTUDIOS",
+        "description": "Estudios completados",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "No sabe leer o escribir",
+          "2": "Sabe leer y escribir pero no estuvo escolarizado el periodo completo de educación obligatoria",
+          "3": "Estudios secundarios de primera etapa con o sin título (graduado en ESO, graduado escolar o equivalente, bachiller elemental, certificado de escolaridad)",
+          "4": "Bachiller, BUP, bachiller superior, COU, PREU",
+          "5": "FP de grado medio, FPI, oficialía industrial o equivalente, otros estudios de grado medio",
+          "6": "FP de grado superior, FPII, maestría industrial o equivalente",
+          "7": "Diplomatura, ingeniería técnica o equivalente",
+          "8": "Grado universitario",
+          "9": "Licenciatura, ingeniería o equivalente",
+          "10": "Máster oficial universitario, especialidades profesionales asimilables (MIR, FIR, etc.)",
+          "11": "Doctorado"
+        },
+        "null": -9
+      },{
+        "name": "ESTUDRED",
+        "description": "Estudios completados reducida",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sin estudios o con estudios de 1er grado",
+          "2": "Educación secundaria, primer ciclo",
+          "3": "Educación secundaria, segundo ciclo",
+          "4": "Educación superior"
+        },
+        "null": -9
+      },{
+        "name": "SITUACT",
+        "description": "Situación en la actividad la semana anterior a la entrevista",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Trabajando al menos una hora",
+          "2": "Con trabajo del que está ausente (por enfermedad, vacaciones, maternidad,...) y al que espera volver a incorporarse",
+          "3": "Parado/a",
+          "4": "Jubilado/a, retirado/a anticipadamente",
+          "5": "Estudiante",
+          "6": "Dedicado/a a las labores del hogar",
+          "7": "Con incapacidad laboral permanente",
+          "8": "Otra situación de inactividad económica"
+        },
+        "null": -9
+      },{
+        "name": "SITURED",
+        "description": "Situación en la actividad reducida",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Activo",
+          "2": "Inactivo"
+        },
+        "null": -9
+      },{
+        "name": "OCU",
+        "description": "¿Estaba ocupado el miembro del hogar en la semana anterior a la entrevista?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Ocupado",
+          "2": "No ocupado"
+        },
+        "null": -9
+      },{
+        "name": "JORNADA",
+        "description": "Tipo de jornada en el trabajo del sustentador principal",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Completa",
+          "2": "Parcial"
+        },
+        "null": -9
+      },{
+        "name": "PERCEP",
+        "description": "¿Es perceptor de ingresos monetarios regulares durante el mes anterior al de entrevista?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "IMPEXACP",
+        "description": "Importe exacto de los ingresos mensuales netos",
+        "length": 5,
+        "type": "integer",
+        "min": 0,
+        "max": 99999,
+        "null": -9
+      },{
+        "name": "IMPUEXACP",
+        "description": "¿El importe exacto procede de una imputación?",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "INTERINP",
+        "description": "Intervalo de ingresos mensuales netos totales",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Menos de 500 €",
+          "2": "De 500 a menos de 1000 €",
+          "3": "De 1000 a menos de 1500 €",
+          "4": "De 1500 a menos de 2000 €",
+          "5": "De 2000 a menos de 2500 €",
+          "6": "De 2500 a menos de 3000 €",
+          "7": "3000 o más €"
+        },
+        "null": -9
+      },{
+        "name": "IMPUINTERP",
+        "description": "¿El intervalo de ingresos procede de una imputación?",
+        "length": 1,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        }
+      },{
+        "name": "NINODEP",
+        "description": "¿Es niño dependiente?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "2": "No"
+        },
+        "null": -9
+      },{
+        "name": "HIJODEP",
+        "description": "¿Es hijo dependiente?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "ADULTO",
+        "description": "¿Es adulto?",
+        "length": 2,
+        "type": "key",
+        "keytype": "integer",
+        "values": {
+          "1": "Sí",
+          "6": "No"
+        },
+        "null": -9
+      },{
+        "name": "FACTOR",
+        "description": "Factor poblacional",
+        "length": 11,
+        "type": "double",
+        "decimals": 6
+      }
+    ]
+  },{
+    "file": "GASTOS",
+    "length": 137,
+    "key": ["ANOENC", "NUMERO", "CODIGO"],
+    "parent": {
+      "file": "HOGAR",
+      "key": ["ANOENC", "NUMERO"]
+    },
+    "fields": [
+      {
+        "name": "ANOENC",
+        "description": "Año de la encuesta",
+        "length": 4,
+        "type": "integer"
+      },{
+        "name": "NUMERO",
+        "description": "Número secuencial que indica el orden del hogar en el fichero",
+        "length": 5,
+        "type": "integer",
+        "min": 1,
+        "max": 25000
+      },{
+        "name": "CODIGO",
+        "description": "Clasificación de bienes y servicios (COICOP/HBS)",
+        "length": 5,
+        "type": "key",
+        "keytype": "tree",
+        "keylength": [2,1,1,1],
+        "values": {
+          "01": {
+            "name": "Alimentos y bebidas no alcohólicas",
+            "values": {
+              "1": {
+                "name": "Productos alimenticios",
+                "values": {
+                  "1": {
+                    "name": "Pan y cereales",
+                    "values": {
+                      "1": "Arroz",
+                      "2": "Pan",
+                      "3": "Otros productos de panadería",
+                      "4": "Pastas alimenticias",
+                      "5": "Productos de pastelería y masas cocinadas",
+                      "6": "Sandwich",
+                      "7": "Otros productos elaborados con cereales, no recogidos anteriormente"
+                    }
+                  },
+                  "2": {
+                    "name": "Carne",
+                    "values": {
+                      "1": "Carne de bovino fresca, refrigerada o congeleada",
+                      "2": "Carne de porcino fresca, refrigerada o congeleada",
+                      "3": "Carne de ovino y caprino fresca, refrigerada o congeleada",
+                      "4": "Carne de ave fresca, refrigerada o congeleada",
+                      "5": "Charcutería y carne seca, salada o ahumada",
+                      "6": "Carnes preparadas y otros productos conteniendo carne",
+                      "7": "Otras carnes comestibles (frescas y congeladas)",
+                      "8": "Despojos, menudillos y casquería"
+                    }
+                  },
+                  "3": {
+                    "name": "Pescado",
+                    "values": {
+                      "1": "Pescados frescos o refrigerados",
+                      "2": "Pescados congelados",
+                      "3": "Crustáceos y moluscos frescos, refrigerados o congelados",
+                      "4": "Pescados y mariscos secos, ahumados o salados",
+                      "5": "Otros pescados y mariscos procesados o conservados y preparados de pescados y mariscos"
+                    }
+                  },
+                  "4": {
+                    "name": "Leche, queso y huevos",
+                    "values": {
+                      "1": "Leche entera",
+                      "2": "Leche semidescremada y descremada",
+                      "3": "Leche conservada",
+                      "4": "Yogures y leches fermentadas",
+                      "5": "Queso y requesón",
+                      "6": "Otros productos a base de leche",
+                      "7": "Huevos"
+                    }
+                  },
+                  "5": {
+                    "name": "Aceites y grasas",
+                    "values": {
+                      "1": "Mantequilla",
+                      "2": "Margarina y otras grasas vegetales",
+                      "3": "Aceite de oliva",
+                      "4": "Otros aceites comestibles",
+                      "5": "Otras grasas animales"
+                    }
+                  },
+                  "6": {
+                    "name": "Frutas",
+                    "values": {
+                      "1": "Cítricos (frescos, refrigerados o congelados)",
+                      "2": "Plátanos (frescos, refrigerados o congelados)",
+                      "3": "Manzanas (frescas, refrigeradas o congeladas)",
+                      "4": "Peras (frescas, refrigeradas o congeladas)",
+                      "5": "Frutas con hueso (frescos, refrigerados o congelados)",
+                      "6": "Aceitunas",
+                      "7": "Bayas (frescas, refrigeradas o congeladas)",
+                      "8": "Otras frutas (frescas, refrigeradas o congeladas)",
+                      "9": "Frutos secos",
+                      "0": "Frutas preparadas y en conserva"
+                    }
+                  },
+                  "7": {
+                    "name": "Hortalizas incluyendo patatas y otros tubérculos",
+                    "values": {
+                      "1": "Hortalizas de hoja o de tallo (frescas o refrigeradas)",
+                      "2": "Coles (frescas o refrigeradas)",
+                      "3": "Hortalizas cultivadas por su fruto (frescas o refrigeradas)",
+                      "4": "Hortalizas con raíz o bulbo y setas (frescas o refrigeradas)",
+                      "5": "Legumbres y hortalizas secas",
+                      "6": "Verduras congeladas",
+                      "7": "Legumbres y hortalizas en conserva o preparadas y otros productos a base de legumbres y hortalizas",
+                      "8": "Patatas",
+                      "9": "Productos derivados de las patatas, mandioca y otros tubérculos"
+                    }
+                  },
+                  "8": {
+                    "name": "Azúcar, confituras, miel, chocolate, confitería y helados",
+                    "values": {
+                      "1": "Azúcar",
+                      "2": "Confitura, mermelada y miel",
+                      "3": "Chocolate en barra o en tableta",
+                      "4": "Confitería",
+                      "5": "Helados",
+                      "6": "Otros productos a base de azúcar"
+                    }
+                  },
+                  "9": {
+                    "name": "Productos alimenticios no comprendidos anteriormente",
+                    "values": {
+                      "1": "Salsas y condimentos",
+                      "2": "Sal, especias y hierbas culinarias",
+                      "3": "Sopas, preparados para postres y levadura",
+                      "4": "Alimentos para bebé",
+                      "5": "Productos dietéticos",
+                      "6": "Otros productos alimenticios no declarados anteriormente"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Bebidas no alcohólicas",
+                "values": {
+                  "1": {
+                    "name": "Café, té, cacao",
+                    "values": {
+                      "1": "Café",
+                      "2": "Té e infusiones",
+                      "3": "Cacao"
+                    }
+                  },
+                  "2": {
+                    "name": "Aguas minerales, bebidas refrescantes y zumos",
+                    "values": {
+                      "1": "Agua mineral",
+                      "2": "Bebidas refrescantes con o sin gas",
+                      "3": "Zumos de frutas",
+                      "4": "Zumos de vegetales"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "02": {
+            "name": "Bebidas alcohólicas, tabaco y narcóticos",
+            "values": {
+              "1": {
+                "name": "Bebidas alcohólicas",
+                "values": {
+                  "1": {
+                    "name": "Espirituosos y licores",
+                    "values": {
+                      "1": "Espirituosos y licores"
+                    }
+                  },
+                  "2": {
+                    "name": "Vinos",
+                    "values": {
+                      "1": "Vinos de uva y otras frutas fermentadas",
+                      "2": "Otros vinos"
+                    }
+                  },
+                  "3": {
+                    "name": "Cerveza",
+                    "values": {
+                      "1": "Cerveza"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Tabaco",
+                "values": {
+                  "1": {
+                    "name": "Tabaco",
+                    "values": {
+                      "1": "Cigarrillos",
+                      "2": "Puros y pequeños cigarros",
+                      "3": "Otros tabacos"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Narcóticos",
+                "values": {
+                  "1": {
+                    "name": "Narcóticos",
+                    "values": {
+                      "1": "Narcóticos"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "03": {
+            "name": "Artículos de vestir y calzado",
+            "values": {
+              "1": {
+                "name": "Artículos de vestir",
+                "values": {
+                  "1": {
+                    "name": "Telas",
+                    "values": {
+                      "1": "Telas"
+                    }
+                  },
+                  "2": {
+                    "name": "Prendas de vestir",
+                    "values": {
+                      "1": "Ropa para hombre confeccionada o hecha a medida, prendas exteriores de abrigo y lluvia, trajes y otras prendas",
+                      "2": "Ropa de mujer confeccionada o hecha a medida, prendas exteriores de abrigo y lluvia, trajes, vestidos y otras prendas",
+                      "3": "Ropa para niños (de 2 a 13 años) y bebés (menos de 2 años) confeccionada o hecha a medida"
+                    }
+                  },
+                  "3": {
+                    "name": "Otros artículos y accesorios de vestir",
+                    "values": {
+                      "1": "Artículos de mercería",
+                      "2": "Otros artículos, complementos y accesorios de vestir (que no sean de mercería, ni se utilicen para practicar deportes)"
+                    }
+                  },
+                  "4": {
+                    "name": "Reparación, limpieza y alquiler de ropa",
+                    "values": {
+                      "1": "Reparación, limpieza y alquiler de ropa de vestir"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Calzado",
+                "values": {
+                  "1": {
+                    "name": "Zapato y otro tipo de calzado",
+                    "values": {
+                      "1": "Calzado de hombre",
+                      "2": "Calzado de señora",
+                      "3": "Calzado de niños (de 2 a 13 años) y bebés (menos de 2 años)"
+                    }
+                  },
+                  "2": {
+                    "name": "Reparación y alquiler de calzado",
+                    "values": {
+                      "1": "Reparación y alquiler de calzado"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "04": {
+            "name": "Vivienda, agua, electricidad, gas y otros combustibles",
+            "values": {
+              "1": {
+                "name": "Alquileres reales",
+                "values": {
+                  "1": {
+                    "name": "Alquileres reales (vivienda principal)",
+                    "values": {
+                      "1": "Alquileres reales (vivienda principal)"
+                    }
+                  },
+                  "2": {
+                    "name": "Alquileres reales (otras viviendas)",
+                    "values": {
+                      "1": "Alquileres reales (otras viviendas)"
+                    }
+                  },
+                  "3": {
+                    "name": "Otros alquileres",
+                    "values": {
+                      "1": "Alquileres de garaje (vivienda principal en propiedad o en cesión gratuita)",
+                      "2": "Alquileres de garaje (otras viviendas en propiedad o en cesión gratuita)",
+                      "3": "Otros alquileres (trasteros, etc.)"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Alquileres imputados",
+                "values": {
+                  "1": {
+                    "name": "Alquileres imputados a la vivienda en propiedad",
+                    "values": {
+                      "1": "Alquileres imputados a la vivienda en propiedad (vivienda principal)",
+                      "2": "Alquileres imputados a la vivienda en propiedad (otras viviendas a disposición del hogar)"
+                    }
+                  },
+                  "2": {
+                    "name": "Otros alquileres imputados",
+                    "values": {
+                      "1": "Alquiler imputado a la vivienda principal, cedida gratuita o semigratuitamente",
+                      "2": "Alquiler imputado a otras viviendas a disposición del hogar, cedida gratuita o semigratuitamente"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Gastos corrientes de mantenimiento y reparación de la vivienda",
+                "values": {
+                  "1": {
+                    "name": "Materiales para el mantenimiento y las reparaciones corrientes de la vivienda cuando la reparación la realiza el propio hogar",
+                    "values": {
+                      "1": "Materiales para el mantenimiento y las reparaciones corrientes de la vivienda cuando la reparación la realiza el propio hogar"
+                    }
+                  },
+                  "2": {
+                    "name": "Servicios de mantenimiento y reparaciones corrientes de la vivienda",
+                    "values": {
+                      "1": "Servicios de mantenimiento y reparaciones corrientes de la vivienda"
+                    }
+                  }
+                }
+              },
+              "4": {
+                "name": "Otros servicios relacionados con la vivienda",
+                "values": {
+                  "1": {
+                    "name": "Distribución de agua",
+                    "values": {
+                      "1": "Distribución de agua fría (vivienda principal)",
+                      "2": "Distribución de agua fría (otras viviendas; garajes y trasteros no ligados a la vivienda principal, etc.)"
+                    }
+                  },
+                  "2": {
+                    "name": "Servicio de recogida de basura",
+                    "values": {
+                      "1": "Servicio de recogida de basura (vivienda principal)",
+                      "2": "Servicio de recogida de basura (otras viviendas; garajes y trasteros no ligados a la vivienda principal, etc.)"
+                    }
+                  },
+                  "3": {
+                    "name": "Servicio de alcantarillado",
+                    "values": {
+                      "1": "Servicio de alcantarillado (vivienda principal)",
+                      "2": "Servicio de alcantarillado (otras viviendas; garajes y trasteros no ligados a la vivienda principal, etc.)"
+                    }
+                  },
+                  "4": {
+                    "name": "Otros servicios relativos a la vivienda no incluidos anteriormente",
+                    "values": {
+                      "1": "Gastos comunitarios (vivienda principal)",
+                      "2": "Gastos comunitarios (otras viviendas; garajes y trasteros no ligados a la vivienda principal, etc.)",
+                      "3": "Servicios relativos a la comunidad de la vivienda principal (excepto gastos comunitarios)",
+                      "4": "Servicios relativos a la comunidad de otras viviendas, garajes, anexos, etc. (excepto gastos comunitarios)"
+                    }
+                  }
+                }
+              },
+              "5": {
+                "name": "Electricidad, gas y otros combustibles",
+                "values": {
+                  "1": {
+                    "name": "Electricidad",
+                    "values": {
+                      "1": "Electricidad (vivienda principal)",
+                      "2": "Electricidad (otras viviendas; garajes y trasteros no ligados a la vivienda principal, etc.)"
+                    }
+                  },
+                  "2": {
+                    "name": "Gas",
+                    "values": {
+                      "1": "Gas ciudad y natural (vivienda principal)",
+                      "2": "Gas ciudad y natural (otras viviendas)",
+                      "3": "Gas licuado (vivienda principal)",
+                      "4": "Gas licuado (otras viviendas)"
+                    }
+                  },
+                  "3": {
+                    "name": "Combistibles líquidos",
+                    "values": {
+                      "1": "Combistibles líquidos (vivienda principal)",
+                      "2": "Combistibles líquidos (otras viviendas)"
+                    }
+                  },
+                  "4": {
+                    "name": "Combistibles sólidos",
+                    "values": {
+                      "1": "Combistibles sólidos (vivienda principal)",
+                      "2": "Combistibles sólidos (otras viviendas)"
+                    }
+                  },
+                  "5": {
+                    "name": "Calefacción y agua caliente central, vapor y hielo",
+                    "values": {
+                      "1": "Calefacción y agua caliente central, vapor y hielo"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "05": {
+            "name": "Mobiliario, equipamiento del hogar y gastos corrientes de conservación de la vivienda",
+            "values": {
+              "1": {
+                "name": "Muebles, artículos de amueblamiento, alfombras y otros revestimientos para suelos y sus reparaciones",
+                "values": {
+                  "1": {
+                    "name": "Muebles y artículos de amueblamiento",
+                    "values": {
+                      "1": "Grandes muebles",
+                      "2": "Artículos de amueblamiento (lámparas, cuadros, galanes, ...)"
+                    }
+                  },
+                  "2": {
+                    "name": "Alfombras y otros revestimientos de suelos",
+                    "values": {
+                      "1": "Alfombras y otros revestimientos de suelos"
+                    }
+                  },
+                  "3": {
+                    "name": "Reparación de muebles, alfombras y revestimiento de suelos y compra de accesorios de mobiliario",
+                    "values": {
+                      "1": "Reparación de muebles, alfombras y revestimiento de suelos y compra de accesorios de mobiliario"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Artículos textiles para el hogar y sus reparaciones",
+                "values": {
+                  "1": {
+                    "name": "Artículos textiles para el hogar y sus reparaciones",
+                    "values": {
+                      "1": "Artículos textiles para el hogar y sus reparaciones (excepto cortinas, visillos, colchones y toldos)",
+                      "2": "Cortinas, visillos, colchones y toldos"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Aparatos de calefacción y de cocina, frigoríficos, lavadoras y otros grandes electrodomésticos; accesorios y reparaciones de los mismos",
+                "values": {
+                  "1": {
+                    "name": "Grandes electrodomésticos, eléctricos o no",
+                    "values": {
+                      "1": "Frigoríficos, congeladores y frigoríficos congeladores",
+                      "2": "Lavadores, secadoras, máquinas de planchar y lavavajillas",
+                      "3": "Cocinas, hornos y microondas",
+                      "4": "Aparatos de calefacción y aparatos de aire acondicionado",
+                      "5": "Aparatos de limpieza",
+                      "6": "Máquinas de coser y tricotar",
+                      "7": "Otros grandes aparatos del hogar"
+                    }
+                  },
+                  "2": {
+                    "name": "Pequeños aparatos electrodomésticos",
+                    "values": {
+                      "1": "Pequeños aparatos electrodomésticos"
+                    }
+                  },
+                  "3": {
+                    "name": "Reparaciones y accesorios de todos los aparatos del hogar",
+                    "values": {
+                      "1": "Reparaciones y accesorios de todos los aparatos del hogar"
+                    }
+                  }
+                }
+              },
+              "4": {
+                "name": "Cristalería, vajilla, cubertería, otros utensilios del hogar y sus reparaciones",
+                "values": {
+                  "1": {
+                    "name": "Cristalería, vajilla, cubertería, otros utensilios del hogar y sus reparaciones",
+                    "values": {
+                      "1": "Cristalería y vajilla",
+                      "2": "Cuberterías",
+                      "3": "Utensilios de cocina y menaje (sin motor) en cualquier material y otros artículos para el hogar",
+                      "4": "Reparación y accesorios de cristalería, vajilla, cubertería y otros utensilios del hogar"
+                    }
+                  }
+                }
+              },
+              "5": {
+                "name": "Herramientas para casa y jardín",
+                "values": {
+                  "1": {
+                    "name": "Grandes herramientas eléctricas y sus reparaciones",
+                    "values": {
+                      "1": "Grandes herramientas eléctricas y sus reparaciones"
+                    }
+                  },
+                  "2": {
+                    "name": "Pequeñas herramientas y accesorios diversos y sus reparaciones",
+                    "values": {
+                      "1": "Pequeños accesorios eléctricos",
+                      "2": "Pequeñas herramientas y accesorios no eléctricos y sus reparaciones"
+                    }
+                  }
+                }
+              },
+              "6": {
+                "name": "Bienes y servicios para el mantenimiento corriente del hogar",
+                "values": {
+                  "1": {
+                    "name": "Artículos no duraderos para el hogar",
+                    "values": {
+                      "1": "Productos de limpieza y mantenimiento",
+                      "2": "Otros productos no duraderos para el hogar"
+                    }
+                  },
+                  "2": {
+                    "name": "Servicio doméstico y otros servicios para la vivienda",
+                    "values": {
+                      "1": "Servicio doméstico (excluidos pagos a la seguridad social)",
+                      "2": "Pagos a la seguridad social del servicio doméstico",
+                      "3": "Otros servicios para la vivienda (tintorería, alquiler de muebles, desinfección, etc.)"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "06": {
+            "name": "Salud",
+            "values": {
+              "1": {
+                "name": "Medicamentos y otros productos farmacéuticos, aparatos y material terapéutico",
+                "values": {
+                  "1": {
+                    "name": "Productos, aparatos y equipos médicos",
+                    "values": {
+                      "1": "Productos farmacéuticos",
+                      "2": "Otros productos médicos",
+                      "3": "Aparatos y material terapéutico"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Servicios médicos y paramédicos extrahospitalarios",
+                "values": {
+                  "1": {
+                    "name": "Servicios médicos",
+                    "values": {
+                      "1": "Servicios médicos"
+                    }
+                  },
+                  "2": {
+                    "name": "Servicios de dentistas",
+                    "values": {
+                      "1": "Servicios de dentistas"
+                    }
+                  },
+                  "3": {
+                    "name": "Servicios paramédicos no hospitalarios",
+                    "values": {
+                      "1": "Servicios de análisis clínicos y centros de rayos X",
+                      "2": "Servicios médicos auxiliares no hospitalarios",
+                      "3": "Otros servicios extrahospitalarios"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Servicios hospitalarios",
+                "values": {
+                  "1": {
+                    "name": "Servicios hospitalarios",
+                    "values": {
+                      "1": "Servicios hospitalarios"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "07": {
+            "name": "Transportes",
+            "values": {
+              "1": {
+                "name": "Compra de vehículos",
+                "values": {
+                  "1": {
+                    "name": "Automóviles",
+                    "values": {
+                      "1": "Automóviles nuevos",
+                      "2": "Automóviles de segunda mano"
+                    }
+                  },
+                  "2": {
+                    "name": "Motos y ciclomotores",
+                    "values": {
+                      "1": "Motos y ciclomotores"
+                    }
+                  },
+                  "3": {
+                    "name": "Bicicletas",
+                    "values": {
+                      "1": "Bicicletas"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Utilización de vehículos personales",
+                "values": {
+                  "1": {
+                    "name": "Compra de piezas de repuesto y accesorios de vehículos personales para reparaciones realizadas por los miembros del hogar",
+                    "values": {
+                      "1": "Compra de piezas de repuesto y accesorios de vehículos personales para reparaciones realizadas por los miembros del hogar"
+                    }
+                  },
+                  "2": {
+                    "name": "Carburantes y lubricantes",
+                    "values": {
+                      "1": "Carburantes y lubricantes"
+                    }
+                  },
+                  "3": {
+                    "name": "Mantenimiento y reparaciones",
+                    "values": {
+                      "1": "Mantenimiento y reparaciones efectuadas en el taller",
+                      "2": "Inspección técnica de vehículos"
+                    }
+                  },
+                  "4": {
+                    "name": "Otros servicios relativos a los vehículos personales",
+                    "values": {
+                      "1": "Servicios de aparcamiento de vehículos personales",
+                      "2": "Servicios de peaje de vehículos personales",
+                      "3": "Servicios relativos a los vehículos personales (excepto aparcamientos y peajes, reparaciones en el taller e ITV)"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Servicio de transporte",
+                "values": {
+                  "1": {
+                    "name": "Transportes por ferrocarril (tren, metro, tranvía… urbano, interurbano y de larga distancia)",
+                    "values": {
+                      "1": "Tren de cercanías (distancias no superiores a 50 Km)",
+                      "2": "Tren de largo recorrido (distancias superiores a 50 Km) y transporte por ferrocarril no desglosable",
+                      "3": "Metro y tranvía (billetes y bonometro utilizado sólo para este transporte)"
+                    }
+                  },
+                  "2": {
+                    "name": "Transportes por carretera (local y larga distancia)",
+                    "values": {
+                      "1": "Autobús y taxi urbano no escolar",
+                      "2": "Autobús y taxi interurbano no escolar",
+                      "3": "Transporte escolar"
+                    }
+                  },
+                  "3": {
+                    "name": "Transporte aéreo",
+                    "values": {
+                      "1": "Transporte aéreo"
+                    }
+                  },
+                  "4": {
+                    "name": "Transporte de viajeros por mar y vías interiores",
+                    "values": {
+                      "1": "Transporte de viajeros por mar y vías navegables interiores"
+                    }
+                  },
+                  "5": {
+                    "name": "Abono transporte",
+                    "values": {
+                      "1": "Abono transporte (para más de un medio de transporte)"
+                    }
+                  },
+                  "6": {
+                    "name": "Otros servicios de transporte",
+                    "values": {
+                      "1": "Otros servicios de transporte mudanzas y guardamuebles"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "08": {
+            "name": "Comunicaciones",
+            "values": {
+              "1": {
+                "name": "Servicios postales",
+                "values": {
+                  "1": {
+                    "name": "Servicios postales",
+                    "values": {
+                      "1": "Servicios postales y de mensajería"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Equipos de teléfono y fax",
+                "values": {
+                  "1": {
+                    "name": "Equipos de teléfono y fax",
+                    "values": {
+                      "1": "Equipos de teléfono y fax"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Servicios de teléfono, telégrafo y fax",
+                "values":  {
+                  "1": {
+                    "name": "Servicios de teléfono, telégrafo y fax",
+                    "values": {
+                      "1": "Servicios de telégrafo, fax y teléfonos públicos",
+                      "2": "Teléfonos fijos",
+                      "3": "Teléfonos móviles",
+                      "4": "Servicios relacionados con internet"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "09": {
+            "name": "Ocio, espectáculos y cultura",
+            "values": {
+              "1": {
+                "name": "Equipos y accesorios audiovisuales, fotográficos y de procesamiento de información, incluyendo sus reparaciones",
+                "values": {
+                  "1": {
+                    "name": "Aparatos receptores, registradores y reproductores de sonido y de imagen",
+                    "values": {
+                      "1": "Equipos para la recepción, grabación y reproducción de sonido",
+                      "2": "Televisores y vídeos"
+                    }
+                  },
+                  "2": {
+                    "name": "Equipo fotográfico y cinematográfico; instrumentos ópticos",
+                    "values": {
+                      "1": "Equipo fotográfico y cinematográfico",
+                      "2": "Instrumentos ópticos"
+                    }
+                  },
+                  "3": {
+                    "name": "Material de tratamiento de la información",
+                    "values": {
+                      "1": "Material de tratamiento de la información"
+                    }
+                  },
+                  "4": {
+                    "name": "Soporte para el registro de imagen,  sonido y datos",
+                    "values": {
+                      "1": "Soporte para el registro de imagen,  sonido y datos"
+                    }
+                  },
+                  "5": {
+                    "name": "Reparación de equipos y accesorios audiovisuales, fotográficos y de procesamiento de la información",
+                    "values": {
+                      "1": "Reparación de equipos y accesorios audiovisuales, fotográficos y de procesamiento de la información"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Otros bienes duraderos importantes para el ocio y la cultura",
+                "values": {
+                  "1": {
+                    "name": "Otros bienes duraderos importantes para el ocio y la cultura al aire libre",
+                    "values": {
+                      "1": "Grandes equipos relacionados con los deportes y el ocio al aire libre"
+                    }
+                  },
+                  "2": {
+                    "name": "Instrumentos musicales y otros bienes duraderos para el ocio y la cultura en lugares cubiertos",
+                    "values": {
+                      "1": "Instrumentos musicales",
+                      "2": "Grandes equipos relacionados con los deportes y el ocio en lugares cubiertos"
+                    }
+                  },
+                  "3": {
+                    "name": "Mantenimiento y reparación de otros bienes duraderos importantes para el ocio y la cultura",
+                    "values": {
+                      "1": "Mantenimiento y reparación de grandes equipos relacionados con el deporte y el ocio (caravanas, ala delta, mesas de billar, pianos, etc.) e instrumentos musicales"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Otros artículos y equipamiento recreativos; flores, jardinería y mascotas",
+                "values": {
+                  "1": {
+                    "name": "Juegos, juguetes y hobbies; equipo para deporte y entretenimiento al aire libre",
+                    "values": {
+                      "1": "Juegos, juguetes, hobbies y pequeños instrumentos musicales"
+                    }
+                  },
+                  "2": {
+                    "name": "Equipo para el deporte, camping y entretenimiento al aire libre",
+                    "values": {
+                      "1": "Equipo para deporte, camping y entretenimiento al aire libre y sus reparaciones"
+                    }
+                  },
+                  "3": {
+                    "name": "Jardinería y flores",
+                    "values": {
+                      "1": "Jardinería y flores"
+                    }
+                  },
+                  "4": {
+                    "name": "Animales domésticos",
+                    "values": {
+                      "1": "Compra de animales domésticos",
+                      "2": "Artículos relativos a animales domésticos"
+                    }
+                  }
+                }
+              },
+              "4": {
+                "name": "Servicios recreativos y culturales",
+                "values": {
+                  "1": {
+                    "name": "Servicios recreativos y deportivos",
+                    "values": {
+                      "1": "Servicios recreativos y deportivos"
+                    }
+                  },
+                  "2": {
+                    "name": "Servicios culturales",
+                    "values": {
+                      "1": "Bailes, cines, teatros y espectáculos",
+                      "2": "Museos, jardines botánicos, bibliotecas y similares",
+                      "3": "Cuotas por licencia de radio y televisión; suscripciones a redes por cable y satélite",
+                      "4": "Alquiler de televisión y videos",
+                      "5": "Servicios para fiestas privadas, servicios fotográficos y servicios para animales domésticos"
+                    }
+                  },
+                  "3": {
+                    "name": "Juegos de azar",
+                    "values": {
+                      "1": "Juegos de azar"
+                    }
+                  }
+                }
+              },
+              "5": {
+                "name": "Prensa, librería y papelería",
+                "values": {
+                  "1": {
+                    "name": "Libros",
+                    "values": {
+                      "1": "Libros no de texto",
+                      "2": "Libros de texto de educación superior",
+                      "3": "Resto de libros de texto"
+                    }
+                  },
+                  "2": {
+                    "name": "Prensa",
+                    "values": {
+                      "1": "Prensa"
+                    }
+                  },
+                  "3": {
+                    "name": "Impresos diversos",
+                    "values": {
+                      "1": "Impresos diversos"
+                    }
+                  },
+                  "4": {
+                    "name": "Materiales de papelería y pintura",
+                    "values": {
+                      "1": "Artículos de papelería y pintura"
+                    }
+                  }
+                }
+              },
+              "6": {
+                "name": "Vacaciones todo incluido",
+                "values": {
+                  "1": {
+                    "name": "Vacaciones todo incluido",
+                    "values": {
+                      "1": "Vacaciones todo incluido"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "10": {
+            "name": "Enseñanza",
+            "values": {
+              "1": {
+                "name": "Educación infantil y primaria",
+                "values": {
+                  "1": {
+                    "name": "Educación infantil",
+                    "values": {
+                      "1": "Educación infantil primer ciclo",
+                      "2": "Educación infantil segundo ciclo"
+                    }
+                  },
+                  "2": {
+                    "name": "Educación primaria",
+                    "values": {
+                      "1": "Educación primaria"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Educación secundaria general",
+                "values": {
+                  "1": {
+                    "name": "Educación secundaria obligatoria",
+                    "values": {
+                      "1": "Educación secundaria obligatoria"
+                    }
+                  },
+                  "2": {
+                    "name": "Bachillerato",
+                    "values": {
+                      "1": "Bachillerato"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Formación profesional y enseñanzas de régimen especial de grado medio",
+                "values": {
+                  "1": {
+                    "name": "Formación profesional y enseñanzas de régimen especial de grado medio",
+                    "values": {
+                      "1": "Formación profesional de grado medio",
+                      "2": "Enseñanzas de régimen especial de grado medio"
+                    }
+                  }
+                }
+              },
+              "4": {
+                "name": "Educación superior",
+                "values": {
+                  "1": {
+                    "name": "Educación superior",
+                    "values": {
+                      "1": "Educación universitaria y equivalente",
+                      "2": "Formación profesional de grado superior"
+                    }
+                  }
+                }
+              },
+              "5": {
+                "name": "Enseñanza no definida por el grado",
+                "values": {
+                  "1": {
+                    "name": "Enseñanza no definida por el grado",
+                    "values": {
+                      "1": "Enseñanzas relacionadas con el sistema educativo",
+                      "2": "Enseñanzas no relacionadas con el sistema educativo"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "11": {
+            "name": "Hoteles, cafés y restaurantes",
+            "values": {
+              "1": {
+                "name": "Comidas y bebidas fuera del hogar",
+                "values": {
+                  "1": {
+                    "name": "Restaurantes y cafés",
+                    "values": {
+                      "1": "Menú del día en restaurantes",
+                      "2": "Comidas y cenas en restaurantes",
+                      "3": "Consumiciones en bares y cafeterías",
+                      "4": "Consumiciones en pubs y discotecas",
+                      "5": "Banquetes, ceremonias y celebraciones fuera del hogar"
+                    }
+                  },
+                  "2": {
+                    "name": "Cantinas y comedores",
+                    "values": {
+                      "1": "Cantinas y comedores",
+                      "2": "Comedores escolares y universitarios"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Servicios de alojamiento",
+                "values": {
+                  "1": {
+                    "name": "Servicios de alojamiento",
+                    "values": {
+                      "1": "Servicios de alojamiento en hoteles",
+                      "2": "Otros servicios de alojamiento (por motivo distinto a la enseñanza)",
+                      "3": "Servicios de alojamiento por motivos de enseñanza"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "12": {
+            "name": "Otros bienes y servicios",
+            "values": {
+              "1": {
+                "name": "Cuidados personales",
+                "values": {
+                  "1": {
+                    "name": "Peluquería y estética personal",
+                    "values": {
+                      "1": "Peluquería y estética personal"
+                    }
+                  },
+                  "2": {
+                    "name": "Aparatos, artículos y productos para los cuidados personales",
+                    "values": {
+                      "1": "Aparatos eléctricos para los cuidados personales y su reparación",
+                      "2": "Artículos no eléctricos para los cuidados personales; productos de aseo"
+                    }
+                  },
+                  "3": {
+                    "name": "Otros servicios para los cuidados personales no contemplados en otra parte",
+                    "values": {
+                      "1": "Otros servicios para los cuidados personales no contemplados en otra parte"
+                    }
+                  }
+                }
+              },
+              "2": {
+                "name": "Efectos personales no declarados anteriormente",
+                "values": {
+                  "1": {
+                    "name": "Joyería, bisutería y relojería",
+                    "values": {
+                      "1": "Joyería, bisutería y relojería"
+                    }
+                  },
+                  "2": {
+                    "name": "Otros efectos personales",
+                    "values": {
+                      "1": "Artículos de viaje, bolsos y bolsas de uso personal",
+                      "2": "Artículos para bebé",
+                      "3": "Artículos para fumadores, funerarios y otros artículos personales excepto artículos de viaje y bolsos"
+                    }
+                  }
+                }
+              },
+              "3": {
+                "name": "Protección social",
+                "values": {
+                  "1": {
+                    "name": "Servicios de protección social",
+                    "values": {
+                      "1": "Servicios de protección social",
+                      "2": "Servicios recibidos fuera de los centros educativos para niños de cualquier edad"
+                    }
+                  }
+                }
+              },
+              "4": {
+                "name": "Servicios de seguros",
+                "values": {
+                  "1": {
+                    "name": "Seguros de vida",
+                    "values": {
+                      "1": "Seguros de vida"
+                    }
+                  },
+                  "2": {
+                    "name": "Seguros ligados a la vivienda",
+                    "values": {
+                      "1": "Seguros ligados a la vivienda"
+                    }
+                  },
+                  "3": {
+                    "name": "Seguros ligados a la sanidad. Seguros de enfermedad y accidente",
+                    "values": {
+                      "1": "Servicios privados de seguros de enfermedad"
+                    }
+                  },
+                  "4": {
+                    "name": "Seguros ligados al transporte",
+                    "values": {
+                      "1": "Seguros ligados al transporte"
+                    }
+                  },
+                  "5": {
+                    "name": "Otros seguros",
+                    "values": {
+                      "1": "Seguros de responsabilidad civil (excepto los derivados de la utilización de vehículos personales)"
+                    }
+                  },
+                  "6": {
+                    "name": "Seguro de enterramiento",
+                    "values": {
+                      "1": "Seguro de enterramiento"
+                    }
+                  }
+                }
+              },
+              "5": {
+                "name": "Servicios financieros no declarados en otra parte",
+                "values": {
+                  "1": {
+                    "name": "Servicios financieros no declarados en otra parte",
+                    "values": {
+                      "1": "Servicios financieros no declarados en otra parte"
+                    }
+                  }
+                }
+              },
+              "6": {
+                "name": "Otros servicios no declarados anteriormente",
+                "values": {
+                  "1": {
+                    "name": "Otros servicios no declarados anteriormente",
+                    "values": {
+                      "1": "Servicios de abogados, notarios, servicios funerarios, de reprografía, mecanografía, etc.",
+                      "2": "Tasas por emisión de documentos oficiales y costas judiciales"
+                    }
+                  }
+                }
+              },
+              "7": {
+                "name": "Dinero de bolsillo a menores residentes en el hogar",
+                "values": {
+                  "1": {
+                    "name": "Dinero de bolsillo a menores residentes en el hogar",
+                    "values": {
+                      "1": "Dinero de bolsillo a menores residentes en el hogar"
+                    }
+                  }
+                }
+              },
+              "8": {
+                "name": "Remesas a miembros del hogar no residentes en la vivienda",
+                "values": {
+                  "1": {
+                    "name": "Remesas a miembros del hogar no residentes en la vivienda",
+                    "values": {
+                      "1": "Remesas a miembros del hogar no residentes en la vivienda"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },{
+        "name": "GASTO",
+        "description": "Importe total del gasto monetario y no monetario elevado temporal y poblacionalmente",
+        "length": 15,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "PORCEN",
+        "description": "Porcentaje de imputación del gasto total",
+        "length": 5,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "CANTIDAD",
+        "description": "Cantidad (sólo para los códigos que requieren cantidad física) elevado temporal y poblacionalmente",
+        "length": 12,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTOMON",
+        "description": "Importe total del gasto monetario (para el salario en especie se contabiliza sólo el importe del pago realizado por el hogar) elevado temporal y poblacionalmente",
+        "length": 15,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM1",
+        "description": "Importe total del gasto no monetario procedente del autoconsumo elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM2",
+        "description": "Importe total del gasto no monetario procedente del autosuministro elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM3",
+        "description": "Importe total del gasto no monetario procedente del salario en especie, (no se incluye alquiler imputado a la vivienda cedida por razón de trabajo) elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM4",
+        "description": "Importe total del gasto no monetario procedente del alquiler imputado a la vivienda principal y otras viviendas a disposición del hogar, en propiedad o cedida gratuita o semigratuitamente por razón distinta a trabajo elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "GASTNOM5",
+        "description": "Importe total del gasto no monetario procedente del alquiler imputado a la vivienda, principal y otras viviendas a disposición del hogar, cedida por razón de trabajo elevado temporal y poblacionalmente",
+        "length": 13,
+        "type": "double",
+        "decimals": 2
+      },{
+        "name": "FACTOR",
+        "description": "Factor poblacional",
+        "length": 11,
+        "type": "double",
+        "decimals": 6
+      }
+    ]
+  }
+]

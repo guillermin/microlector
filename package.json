@@ -1,0 +1,28 @@
+{
+  "name": "microlector",
+  "version": "1.0.0",
+  "description": "Lector de microdatos del INE",
+  "main": "tools/node.js",
+  "scripts": {
+    "test": "node test/run-tests.js"
+  },
+  "author": {
+    "name": "Guillermo Aguirre de Cárcer Domínguez",
+    "email": "guillermoaguirredecarcer@gmail.com"
+  },
+  "bin": {
+    "microlector": "bin/microlector"
+  },
+  "homepage": "https://github.com/guillermin/microlector",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guillermin/microlector.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "lodash.includes": "^3.0.0",
+    "minimist": "^1.1.0",
+    "mongodb": "^1.4.30",
+    "path-complete": "git://github.com/guillermin/path-complete.git"
+  }
+}
